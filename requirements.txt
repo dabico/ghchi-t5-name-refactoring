@@ -1,0 +1,3 @@
+pandas
+seqio
+t5
