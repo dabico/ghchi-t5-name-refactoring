@@ -16,29 +16,29 @@ Running the script requires an isolated virtual environment.
 Execute the following in your shell:
 
 ```bash
-python -m venv venv
+$ python -m venv venv
 ```
 
 A `venv` directory will be created.  
 After that, activate the environment:
 
 ```bash
-source venv/bin/activate
+$ source venv/bin/activate
 ```
 
 In order for the script to run, you must also download all the packages listed in `requirements.txt`:
 ```bash
-pip install -U -r requirements.txt
+$ pip install -U -r requirements.txt
 ```
 
 After that, you can finally execute the script with the following command:
 ```bash
-python ./predictor.py ./relative/path/to/methods.csv
+$ python ./predictor.py ./relative/path/to/methods.csv
 ```
 
 Where `methods.csv` is the file containing the masked method code of a project, obtained through our platform.  
 The resulting `predictions.csv` file will be created in the `out` directory.  
 To leave the virtual environment, run:
 ```bash
-deactivate
+$ deactivate
 ```
